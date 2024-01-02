@@ -175,7 +175,7 @@ void CurrentShaperTask::shapeCurrent() {
 		}
 	}
 	if (livepwr > max_pwr) {
-		livepwr = max_pwr;
+		//livepwr = max_pwr;
 	}
 	if(!config_threephase_enabled()) {
 		_max_cur = ((max_pwr - livepwr) / evse.getVoltage()) + evse.getAmps();
